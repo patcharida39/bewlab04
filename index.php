@@ -1,11 +1,10 @@
+<?php
+
+include('header.php')
+?>
+
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Calculate profit</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" >
-
 
     <style>
         ul {
@@ -13,7 +12,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #FF99CC;
+            background-color: #f8d7da;
         }
 
         li {
@@ -22,7 +21,7 @@
 
         li a {
             display: block;
-            color: black;
+            color: black;l
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -32,21 +31,11 @@
             background-color:#FFCCCC ;
         }
 
-        .active {
-            background-color:#FFCCCC ;
-        }
+
 
     </style>
 </head>
 
-<body>
-
-<ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#download">Download</a></li>
-</ul>
-
-</body>
 </html>
 
 
@@ -56,55 +45,75 @@
 </div>
 
     <style>
+        @import url("https://fonts.googleapis.com/css?family=Asar");
+
+        body{
+            font-family: 'Asar', serif;
+            background-image: url("https://images.pexels.com/photos/1089842/pexels-photo-1089842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        }
+
+
+
         * {
             box-sizing: border-box];
         }
 
         input[type=text], select, textarea {
             width: 100%;
-            padding: 12px;
+            padding: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
             resize: vertical;
+            font-size: 120%;
         }
 
         label {
-            padding: 12px 12px 12px 0;
+            padding: 4% 4% 4% ;
             display: inline-block;
+
+
+
         }
 
         input[type=submit] {
-            background-color: #4CAF50;
+            background-color: #e4606d;
             color: white;
-            padding: 12px 20px;
+            padding: 15px 25px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             float: right;
+            font-size: 150%;
 
         }
 
         input[type=submit]:hover {
-            background-color: #45a049;
+            background-color: #ed969e;
+
         }
 
         .container {
-            border-radius: 10px;
+            border-radius: 20px;
             background-color: #f2f2f2;
-            margin-top: 5%;
-            padding: 7%;
+            margin-top: 3%;
+            padding: 3% 10% 4%;
+            background-image: url("https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+            background-size: cover;
+
         }
 
-        .col-25 {
+        .col-25 { /*first last b name*/
             float: left;
-            width: 15%;
-            margin-top: 6px;
+            width: 18%;
+            margin-top: 33px;
+            margin-left: 10%;
+            font-size: 120%;
         }
 
-        .col-75 {
+        .col-75 {/* Box first last b name*/
             float: left;
             width: 50%;
-            margin-top: 6px;
+            margin-top: 20px;
         }
 
         /* Clear floats after the columns */
@@ -121,6 +130,18 @@
                 margin-top: 0;
             }
         }
+        .container h1{
+            text-align: center;
+        }
+
+        #file{
+            margin-left: 23%;
+            margin-top: 1%;
+        }
+        #submit{
+            margin-left: 42%;
+            margin-top: 3%;
+        }
     </style>
 
 
@@ -128,13 +149,13 @@
 
 
     <div class="container" >
-        <h1 >Information Form</h1> <br><br>
+        <h1 >INFORMATION  FORM</h1> <br><br>
 
         <form  method="post" action="Controller.php" enctype="multipart/form-data">
             <div class="row">
 
                 <div class="col-25">
-                    <label for="fname">First Name</label>
+                    <label for="fname">FIRST NAME</label>
                 </div>
 
                 <div class="col-75">
@@ -146,7 +167,7 @@
             <div class="row">
 
                 <div class="col-25">
-                    <label for="lname">Last Name</label>
+                    <label for="lname">LAST NAME</label>
                 </div>
 
                 <div class="col-75">
@@ -156,10 +177,10 @@
 
             <div class="row">
                 <div class="col-25">
-                    <label for="bsnname">Business Name</label>
+                    <label for="bsnname">BUSINESS NAME</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="bsnname" name="bsnname" placeholder="Your Business name..">
+                    <input type="text" id="bsnname" name="bsnname" placeholder="Your Business name.."><br><br>
                 </div>
             </div>
 
@@ -169,16 +190,12 @@
 
 
 
-            <div class="row">
-                <input type="submit" value="Submit">
+            <div class="row" id="submit">
+                <input type="submit" value="IMPORT">
             </div>
         </form>
     </div>
     </body>
-
-
-
-
 
 </html>
 

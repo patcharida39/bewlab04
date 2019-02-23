@@ -1,10 +1,11 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: bew
- * Date: 2019-02-20
- * Time: 18:26
+ * User: kansiri
+ * Date: 14/2/2019 AD
+ * Time: 11:02
  */
+include('header.php');
 
 if(isset($_POST)){
     $totalProfit = 0;
@@ -44,6 +45,30 @@ if(isset($_POST)){
     <link rel="stylesheet" href="style.css" >
 </html>
 <body>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Asar");
+
+        body{
+            background-color: #f5c6cb;
+            font-family: 'Asar', serif;
+            background-image: url("https://images.pexels.com/photos/1089842/pexels-photo-1089842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        }
+        .text-center{
+            background-color: white;
+        }
+        .card-header{
+            background-color: #f5c6cb;
+        }
+        .card-body{
+            background-color: #ed969e;
+        }
+
+
+
+
+
+    </style>
 <div class="container">
     <div class="intable">
         <div class="table-responsive text-nowrap">
